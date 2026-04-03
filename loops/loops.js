@@ -532,3 +532,122 @@
     //     54
     //      5
    
+
+
+
+    // Q 22: 
+    // *****        
+    // *   *        
+    // *   *
+    // *   *
+    // *****
+
+
+    // for(i=1;i<=5;i++){
+    //     // star : 
+    //     for(j=1;j<=5;j++){
+    //         // condition : 
+    //         if(i==1||i==5||j==1||j==5){
+    //             document.writeln("*")
+    //         }
+    //         else{
+    //             document.writeln("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.writeln("<br/>")
+    // }
+
+
+
+
+
+    // Q 23 : 
+
+    // *
+    // **
+    // * *
+    // *  *
+    // *****
+
+
+    // for(i=1;i<=5;i++){
+    //     // star : 
+    //     for(j=1;j<=i;j++){
+    //         if(i==5||j==1||j==i){
+    //             document.writeln("*")
+    //         }
+    //         else{
+    //             document.writeln("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.writeln("<br/>")
+    // }
+
+
+
+    // Q 24: 
+    // *****
+    // *  *
+    // * *
+    // **
+    // * 
+
+
+    // for(i=5;i>=1;i--){
+    //     for(j=1;j<=i;j++){
+    //         if(i==5||j==1||j==i){
+    //             document.writeln("*")
+    //         }
+    //         else{
+    //             document.writeln("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.writeln("<br/>")
+    // }
+
+
+    // Q 25: 
+    //     *
+    //    **
+    //   * *
+    //  *  *
+    // *****
+
+
+    // for(i=1;i<=5;i++){
+    //     for(j=5;j>i;j--){
+        //         document.writeln("&nbsp;&nbsp;")
+        //     }
+        //     for(k=1;k<=i;k++){
+    //         if(i==5||k==1||k==i){
+    //             document.writeln("*")
+    //         }
+    //         else{
+    //             document.writeln("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.writeln("<br/>")
+    // }
+
+
+
+    // Q m : 
+
+    // *     *
+    // * * * *
+    // *  *  * 
+    // *     *
+    // *     * 
+
+
+    // for(i=1;i<=5;i++){
+    //     for(j=1;j<=7;j++){
+    //         if(j==1||j==7||(i==2&&j==3)||(i==2&&j==5)||(i==3&&j==4)){
+    //             document.writeln("*")
+    //         }
+    //         else{
+    //             document.writeln("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.writeln("<br/>")
+    // } 
