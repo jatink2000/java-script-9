@@ -144,9 +144,7 @@
     // document.write(b)
 
 
-
     // 16. endwith() : 
-
-    let a="hy jatin";
-    let b=a.endsWith("in") 
-    document.write(b)
+    // let a="hy jatin";
+    // let b=a.endsWith("in") 
+    // document.write(b)
