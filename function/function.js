@@ -116,12 +116,114 @@
 
     // function return : the function return is used to pass the data and information outside the function . 
 
-        function groot(){
-            let a=40; // local scope
-            return a; 
-        }
-        let x=groot() // 40 
-        document.write(x)
+        // function groot(){
+        //     let a=40; // local scope
+        //     return a; 
+        // }
+        // let x=groot() // 40 
+        // document.write(x)
 
 
+
+
+    // types of function structure : there are four types of function structure. 
+    
+    // 1. no return no argument  : 
+
+        // function groot(){
+        //     document.write("groot")
+        // }
+        // // call 
+        // groot() ; 
+
+
+
+    // 2. no return with argument  : 
+        
+        // function groot(myname,year){
+        //     document.writeln("my name is ",myname)
+        //     document.writeln("& year is ",year)
+        // }
+        // groot("groot", 2026) ; 
+
+
+    // 3. with return no argument  : 
+        // function groot(){
+        //     let myname="groot"
+        //     return myname ; 
+        // }
+        // let x=groot()
+        // document.write("my name is ",x) ; 
+
+
+    // 4. with return with argument  :
+    
+        // function groot(myname){
+        //     return myname ; 
+        // }
+        // let x=groot("groot academy")
+        // document.write("my name is ",x) ; 
+
+
+
+
+    // types of functions : 
+    // 1. simple function : to create a simple function , declare the function keyword and then define the function name followed by the () . and start the function body using the {} . 
+        // syntex : 
+
+        // function functionname(){
+        //     code to be excute . 
+        // }
+        // functionname() ; 
+
+        // function groot(){
+        //     document.write("hello")
+        // }
+        // groot(); 
+
+
+
+    // 2. anonymous functions :  an anonymous functions is that function that have no function name . unliked unnamed function . to craete that function , define the function keyword . with () . then start the function body {} . 
+
+        // syntex : 
+        // function (){
+        //     code to be excute . 
+        // }
+
+
+        // let x=function (){
+        //     document.write("hello groot")
+        // }
+
+        // x() ; 
+
+
+    // 3. arrow function:   in an arrow function there is no function keyword , to create that function function name using the single =. followed by the () the declare the => and start the function body using the {} . 
+
+        // syntex : 
+        // functionname=()=>{
+        //     code to be excute 
+        // }
+        // functionname() 
+
+
+        // let groot=()=>{
+        //     document.write("hello java script")
+        // }
+
+        // groot(); 
+
+
+
+    // 4. self invoked function : the self invoked function are javascipt function that excute immediately . to  define the function yo can enclose the anonymous function in (). to call the function use the (). 
+        
+        // (function (){
+        //     code to be excute 
+        // })() 
+
+
+
+        // (function (){
+        //     document.write("hello java")
+        // })() 
 
