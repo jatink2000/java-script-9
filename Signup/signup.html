@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>School Admission Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #dbeafe, #e0f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .form-container {
+            width: 600px;
+            background: #ffffffcc;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 5px;
+            font-weight: 600;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row input {
+            flex: 1;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #3b82f6;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #555;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #3b82f6;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Create Your Account </h2>
+
+        <label>Name *</label>
+        <div class="row">
+            <input type="text" placeholder="First" id="firstname">
+            <input type="text" placeholder="Last" id="lastname">
+        </div>
+
+        <label>Current Address</label>
+        <input type="text" placeholder="Street Address" id="address">
+
+        <div class="row" style="margin-top:8px;">
+            <input type="text" placeholder="City" id="city">
+            <input type="number" placeholder="PinCode" id="pincode">
+        </div>
+
+        <label>Phone</label>
+        <input type="text" placeholder="### ### ####" id="number">
+
+        <label>Email *</label>
+        <p class="small-text">Your admission confirmation will be sent via email.</p>
+        <input type="email" id="email">
+
+        <label>Password *</label>
+        <input type="password" id="password">
+
+        <button onclick="Signup()">Signup</button>
+    </div>
+
+
+    <script src="./signup.js"></script>
+</body>
+
+</html>
