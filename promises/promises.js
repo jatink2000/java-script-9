@@ -45,10 +45,38 @@
 // async : the async keyword makes a function return a Promise 
 // await: the await keyword can only be used inside the async function . the function pause the excutation and wait for resolve the promises . 
 
-console.log(groot)
+
+
 async function getdata(){
-    let a=await groot
-    console.log(a)
+    let a=await fetch("https://fakestoreapi.com/products")
+    let b=await a.json()
+    
+    let allproducts=document.getElementById("allproducts")
+    b.map((item)=>{
+        let box1=document.createElement("div")
+
+        let imagebox=document.createElement("img")
+        imagebox.src=item.image
+
+        box1.appendChild(imagebox)
+        allproducts.appendChild(box1)
+    })
+
 }
 
 getdata()
+
+
+async function post() {
+    let a=await fetch("https://dummyjson.com/posts")
+    let b=await a.json()
+    let c=b.posts
+
+    c.map((data)=>{
+        let likes=document.createElement("p")
+        likes.innerHTML=`<i class="fa-solid fa-house"></i>`+data.reactions.likes
+
+        console.log(likes)
+    })
+}
+post() ; 
